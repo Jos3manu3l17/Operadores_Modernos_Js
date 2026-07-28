@@ -79,5 +79,52 @@ const copia = [...numeros];
 console.log(copia); // [1, 2, 3]
 // Aquí copia es una nueva versión del arreglo, independiente del original.
 
+// Destructuracion:
+
+// Manera tradicional de acceder a las propiedades de un objeto
+
+
+const usuario = {
+    nombre: "Julian", 
+    edad: "23",
+    Ciudad: "Barranquilla"
+}
+
+const nombre = usuario.nombre;
+const edad = usuario.edad;
+const Ciudad = usuario.Ciudad;
+
+console.log(nombre, edad, Ciudad);
+
+// Manera clara y limpia de acceder a las propiedades de un objeto usando destructuración
+
+
+const usuario = {
+    nombre: "Julian", 
+    edad: "23",
+    Ciudad: "Barranquilla"
+}
+
+const {nombre, edad, Ciudad} = usuario;
+
+console.log(nombre, edad, Ciudad);
+
+// Manejo de errores con try catch:
+
+// El bloque try se utiliza para envolver el código que puede generar un error. 
+// Si ocurre un error dentro del bloque try, la ejecución se detiene y se pasa al bloque catch.
+
+console.log("Inicio");
+
+try {
+    const usuario = null;
+    console.log(usuario.nombre); 
+} catch (error) {
+    console.log("Se produjo un error: " , error.mensaje);
+}
+
+console.log("Fin del programa"); // Sí se ejecuta gracias al manejo del error
+
+
 
 
