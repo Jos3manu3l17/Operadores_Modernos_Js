@@ -20,10 +20,14 @@ registrarUsuarios(
 
 const productos = ["teclado", "mouse", "pantalla"];
 
-function agregarProductos(lista, ...nuevosProductos) {
+function agregarProducto(lista, nuevoProducto) {
 
-    const copia = [...lista, ...nuevosProductos];
-    productos.push("auriculares");
-
-
+  return [...lista, nuevoProducto];
 }
+
+const productosActualizados = agregarProducto(productos, "audífonos");
+
+console.log("Lista Original:", productos); 
+
+console.log("Nueva Lista:", productosActualizados); 
+
