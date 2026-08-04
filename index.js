@@ -23,3 +23,4 @@ console.log("Idioma resultante 2:", idiomaResultado2); // Salida: "es"
 
 // 3. Verificación de inmutabilidad del objeto 'defaults'
 console.log("Defaults intactos:", defaults); //
+
