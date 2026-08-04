@@ -1,3 +1,32 @@
+// 3. Procesamiento de compras
+
+// Requerimiento:
+
+// Implementa una función procesarCompra(cliente, productos) donde:
+
+// cliente es un objeto con {nombre, correo}.
+// productos es una lista de objetos con {nombre, precio}.
+
+// La función debe:
+
+// Validar con try...catch que el cliente tenga los dos datos y que los productos sean
+// válidos.
+
+// Utilizar spread para crear un nuevo objeto con toda la información del cliente.
+// Usar destructuración para separar el primer producto comprado del resto.
+// Retornar un informe con:
+
+
+// Total de productos
+// Precio total
+// Primer producto adquirido
+
+// Resultado esperado:
+
+// Un informe completo y coherente, construido con técnicas de inmutabilidad y manejo
+// seguro de errores.
+
+
 function procesarCompra(cliente, productos) {
 
     try {
