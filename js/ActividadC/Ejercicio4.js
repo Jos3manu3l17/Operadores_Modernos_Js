@@ -7,12 +7,10 @@
 // Retorna el idioma resultante.
 
 export function configurarUsuario(defaults, personalizadas) {
-  // 1. Combinación inmutable usando spread operator
+
   const configuracionFinal = { ...defaults, ...personalizadas };
 
-  // 2. Destructuración para obtener el idioma configurado
   const { idioma } = configuracionFinal;
 
-  // 3. Retorno del idioma resultante
   return idioma;
 }
