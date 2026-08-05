@@ -29,17 +29,16 @@ const extraConfig = { nivel: 2, tema: "oscuro" };
 
 function configFinal(...configs) {
   try {
-    // 1. Validar mediante try...catch que cada elemento recibido sea un objeto válido
+
     for (const config of configs) {
       if (typeof config !== "object" || config === null || Array.isArray(config)) {
         throw new Error("Uno de los elementos proporcionados no es un objeto válido.");
       }
     }
 
-    // 2. Mezclar todas las configuraciones usando spread (...) sin mutar las originales
     const resultado = Object.assign({}, ...configs);
 
-    // 3. Retornar el objeto final consolidado con la propiedad validacion: true
+
     return {
       ...resultado,
       validacion: true

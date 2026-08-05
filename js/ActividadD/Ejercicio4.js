@@ -42,7 +42,6 @@ function estadisticas(jugadores) {
     // 3. Copia inmutable del arreglo original usando el operador spread (...)
     const jugadoresProcesados = [...jugadores];
 
-    // 4. Retornamos el objeto final
     return {
       puntosPrimerJugador,
       puntosTotales,
@@ -54,5 +53,4 @@ function estadisticas(jugadores) {
   }
 }
 
-// Probar la función:
 console.log(estadisticas(jugadores));
